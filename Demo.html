@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+    <link rel="stylesheet" href="Demo.css">
+
+    <!-- BOOSTRAP LINK -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <!-- PHOTOS AND VIDEO  -->
+
+  <center>
+    <div class="picandvid">
+
+      <p id="p1" class="Photos" onclick="click7()"> Photos </p>
+      <p id="v1" class="Videos" onclick="click8()"> Videos </p>
+
+    </div>
+  </center>
+
+
+  <!-- PHOTOS  -->
+
+
+
+<div id="pho1" >
+
+  <div id="carouselExampleInterval1" class="carousel slide" data-bs-ride="carousel">
+
+
+    <div class="carousel-inner">
+
+
+      <div class="carousel-item active" data-bs-interval="5000">
+      <img src="gallery_r3.webp" width="1465px" height="600px" class="d-block " alt="..."> 
+      </div>
+
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="gallery_mt03.webp" width="1465px" height="600px" class="d-block " alt="...">
+      </div>
+
+      <div class="carousel-item">
+        <img src="R15M.img.png" width="1465px" height="600px" class="d-block " alt="...">
+      </div>
+
+      <div class="carousel-item">
+        <img src="gallery_mt15.webp" width="1465px" height="600px" class="d-block " alt="...">
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>
+
+  <!-- VIDEO  -->
+
+<div id="vid1" style="display: none;">
+
+  <video src="v1.mp4" autoplay muted style="width: 100%;height:600px;"></video>
+
+</div>
+</body>
+<script>
+  var g=document.getElementById("pho1");
+  var h=document.getElementById("vid1");
+
+  function click8(){
+    g.style.display="none";
+    h.style.display="block";
+
+
+    document.getElementById("v1").style.color="blue";
+    document.getElementById("v1").style.borderColor="blue";
+    document.getElementById("p1").style.color="black";
+    document.getElementById("p1").style.borderColor="grey";
+    
+  }
+  function click7(){
+    g.style.display="block";
+    h.style.display="none";
+
+    document.getElementById("p1").style.color="blue";
+    document.getElementById("p1").style.borderColor="blue";
+    document.getElementById("v1").style.color="black";
+    document.getElementById("v1").style.borderColor="grey";
+  }
+  window.onload(document.getElementById("p1").style.color="blue",document.getElementById("p1").style.borderColor="blue")
+</script>
+</html>

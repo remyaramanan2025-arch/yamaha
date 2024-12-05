@@ -1,0 +1,18 @@
+/* PHOTOS AND VIDEO  */
+
+div.picandvid{
+
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+  margin-left: 600px;
+  
+  }
+  .Photos,.Videos{
+  
+      border: 2px solid gray ;
+      border-radius: 30px;
+      width: fit-content;
+      font-size: 25px;
+      padding: 10px 35px;
+      }
